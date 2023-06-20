@@ -13,15 +13,15 @@
 
         <div>
             <label for="data">Data:</label>
-            <input type="date" name="data" id="data" placeholder="ano/mês/dia">
+            <input type="date" name="data" id="data" placeholder="ano/mês/dia" required>
             
         </div>
     
         <div>
             <label>Tipo:</label>
-            <input type="radio" name="tipo" id="entrada" value="entrada">
+            <input type="radio" name="tipo" id="entrada" value="entrada" required>
             <label for="entrada">entrada</label>
-            <input type="radio" name="tipo" id="saida" value="saida">
+            <input type="radio" name="tipo" id="saida" value="saida" required>
             <label for="saida">saida</label>
         </div>
 
@@ -29,18 +29,18 @@
 
         <div>
             <label for="valor">Valor:</label>
-            <input type="number" name="valor" id="valor">
+            <input type="number" name="valor" id="valor" required>
         </div>
 
         <div>
             <label for="historico">Histórico:</label>
-            <input type="text" name="historico" id="historico">
+            <input type="text" name="historico" id="historico" required>
         </div>
 
         <div>
             <label for="cheque">Cheque:</label>
        
-        <select name="cheque" id="cheque">
+        <select name="cheque" id="cheque" required>
             <option value="sim">Sim</option>
             <option value="nao">Não</option>
           </select>

@@ -24,17 +24,15 @@
                 <th>Historico</th>
                 <th>Cheque</th>
                 <th>Excluir</th>
-                <th>Alterar</th>
             </tr>
             <?php
             do{     echo "<td>".$row['id']."</td>";
                     echo "<td>".$row['data']."</td>";
                     echo "<td>".$row['tipo']."</td>";
                     echo "<td>".$row['valor']."</td>";
-                    echo "<td>".$row['historico']."</td>";
+                    echo "<td><a href='altera_fluxo_caixa.php?id=".$row['id']."'>".$row['historico']. "</a></td>";
                     echo "<td>".$row['cheque']."</td>";
-                    echo "<td><a href='deleta_usuario.php?id_usuario=".$row['id']."'>Deletar </a> </td>";
-                    echo "<td><a href='altera_fluxo_caixa.php?id=".$row['id']."'>Alterar</a> </td>";
+                    echo "<td><a href='excluir_fluxo_caixa.php?id=".$row['id']."'>Deletar </a> </td>";
                     echo "</tr>";
             }while($row = mysqli_fetch_array($result))
             ?>

@@ -27,7 +27,7 @@ include("conexao.php");
         
         $result = mysqli_query($con,$sql);
         if($result)
-                echo "Dados alterados com sucesso!<br>";
+                echo "Dados cadastrados com sucesso!<br>";
         else
                 echo "Erro ao alterar dados: $msqli_erro($con)!";
 
