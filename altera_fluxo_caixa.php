@@ -36,7 +36,7 @@
             <label>Tipo:</label>
             <input type="radio" name="tipo" id="entrada" value="entrada" <?php if ($row['tipo'] == 'entrada') echo 'checked'?>>
             <label for="entrada">entrada</label>
-            <input type="radio" name="tipo" id="saida" value="saida" <?php if ($row['tipo'] == 'entrada') echo 'checked'?>>
+            <input type="radio" name="tipo" id="saida" value="saida" <?php if ($row['tipo'] == 'saida') echo 'checked'?>>
             <label for="saida">saida</label>
         </div>
 
